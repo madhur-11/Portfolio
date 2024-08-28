@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div id="menuPanel" class="menu-panel">
+        <button class="menu-btn menu-panel-btn" onclick="toggleMenu()">&#9776;</button>
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#skills" onclick="toggleMenu()">Skills</a>
+        <a href="#Certifications" onclick="toggleMenu()">Certifications</a>
+        <a href="#projects" onclick="toggleMenu()">Projects</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+    <div id="home" class="content-section">
+        <div class="home-container">
+            <div class="profile">
+                <img src="picture.jpg" alt="Profile Picture">
+                <h2>Madhur Meduri</h2>
+                <p>Coder<br>Hobbyist Photographer<br>Problem Solver</p>
+            </div>
+            <div class="quote">
+                <p>"I am a 4th-year Computer Science Engineering student specializing in AI & ML at Pragati Engineering College. With hands-on experience in AI, cloud computing, and cybersecurity through virtual internships, I've honed my skills in Python, Java, and web technologies. My projects reflect my passion for prompt engineering and innovative problem-solving. I am also certified with a couple of Azure certifications and a couple of Service Now certifications. I thrive in challenges, whether it's contributing to a book chapter on deep learning in healthcare or exploring the creative possibilities of generative AI."</p>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="content-section">
+        <h2>Skills</h2>
+        <div class="underline"></div>
+        <div class="skill">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%; background-color: #005eff;">
+                    <div class="diagonal-lines"></div>
+                </div>
+                <span class="skill-text">Advanced</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">C</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 60%; background-color: #aa00ff;"></div>
+                <span class="skill-text">Intermediate</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Java</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 60%; background-color: #805100;"></div>
+                <span class="skill-text">Intermediate</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 50%; background-color: #ff8400;"></div>
+                <span class="skill-text">Intermediate</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Prompt Engineering</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%; background-color: #00fbff;"></div>
+                <span class="skill-text">Advanced</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Communication</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%; background-color: #00ff08;"></div>
+                <span class="skill-text">Advanced</span>
+            </div>
+        </div>
+        <!-- Add your skills content here -->
+    </div>
+    <div id="Certifications" class="certifications">
+        <h2>Certifications</h2>
+        <div class="underline"></div>
+        <div class="card">
+            <div class="image-carousel">
+                <div class="image-item" style="--i: 0;"><img src="CSA.jpg" alt="Image 1"></div>
+                <div class="image-item" style="--i: 1;"><img src="CAD.jpg" alt="Image 2"></div>
+                <div class="image-item" style="--i: 2;"><img src="Codevita.jpg" alt="Image 3"></div>
+                <div class="image-item" style="--i: 3;"><img src="Azure-Data-Scientist.jpg" alt="Image 4"></div>
+                <div class="image-item" style="--i: 4;"><img src="Azure-AI-Engineer.jpg" alt="Image 5"></div>
+                <div class="image-item" style="--i: 5;"><img src="AWS-Cloud.jpg" alt="Image 6"></div>
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="content-section">
+        <h2>Projects</h2>
+        <div class="underline"></div>
+        <div class="projects-container">
+            <a href="https://github.com/madhur-11/Calculator-Using-Kivy" target="_blank" class="project-card">
+                <h3>Calculator</h3>
+                <p>A simple and intuitive Calculator app made using Kivy package in python.</p>
+            </a>
+            <a href="https://github.com/madhur-11/GAN-based-Image-Generator" target="_blank" class="project-card">
+                <h3>Image Generator</h3>
+                <p>A GAN Based Image Generator trained on the images of an in game character using pytorch.</p>
+            </a>
+            <a href="https://github.com/madhur-11/Prompt-Engineering-Project-Portfolio" target="_blank" class="project-card">
+                <h3>Portfolio Wireframe</h3>
+                <p>A wireframe of a Portfolio website made entirely using Chat GPT 4o and Prompt Engineering.</p>
+            </a>
+        </div>
+    </div>
+    <div id="contact" class="content-section">
+        <h2>Contact</h2>
+        <div class="underline"></div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>Email: medurimadhur11@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/madhur-meduri-b958281a9/" target="_blank"><img src="linkedin-logo.png" class="social-logo" alt="LinkedIn"></a>
+                    <a href="https://github.com/madhur-11" target="_blank"><img src="github-logo.png" class="social-logo" alt="GitHub"></a>
+                    <a href="https://leetcode.com/u/Madhur_11/" target="_blank"><img src="leetcode-logo.png" class="social-logo" alt="LeetCode"></a>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="contact-form">
+                <form action="https://getform.io/f/avredpqa" method="post">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
